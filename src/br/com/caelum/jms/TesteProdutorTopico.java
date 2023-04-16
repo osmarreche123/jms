@@ -16,7 +16,8 @@ public class TesteProdutorTopico {
         Destination topico = (Destination) context.lookup("loja");
         MessageProducer producer = session.createProducer(topico);
 
-        Message message = session.createTextMessage("<pedido><id> 101 </id></pedido> Indice:");
+        Message message = session.createTextMessage("<pedido><id>101</id><e-book>false</e-book></pedido>Indice:");
+        message.setBooleanProperty("ebook", false);
         producer.send(message);
 
         System.out.println("Mensagen Enviada!");
