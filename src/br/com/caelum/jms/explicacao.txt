@@ -5,3 +5,5 @@ Fila - Quando se trata do consumidor da fila ocorre a concorrencia ou seja cada 
  nunca um consumidor recebera a mensagem do outro consumidor;
 
  Topico - Quando se trata do consumidor do topico os consumidores receberam a mesma mensagem;
+
+ teste
