@@ -11,7 +11,7 @@ public class TesteConsumidorTopicoComercialObjectJava {
         InitialContext context = new InitialContext();
         ConnectionFactory factory = (ConnectionFactory) context.lookup("ConnectionFactory");
         Connection connection = factory.createConnection();
-        connection.setClientID("comerciaal");
+        connection.setClientID("comerciall");
         connection.start();
 
         Session session = connection.createSession(false ,Session.AUTO_ACKNOWLEDGE);

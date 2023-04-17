@@ -31,9 +31,8 @@ public class TesteProdutorTopico {
         String xml = writer.toString();
         System.out.println(xml);
 
-//        Message message = session.createTextMessage(xml);
-        Message message = session.createObjectMessage(pedido);
-//        a messangem passando session.createObjectMessage(pedido) vai estorar exception no consumidor pois o mesmo esta parciando para text message;
+        Message message = session.createTextMessage(xml);
+
 
         message.setBooleanProperty("ebook", false);
         producer.send(message);
